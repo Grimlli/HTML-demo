@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulär</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>
+                <a href="index.html">Main page</a><br>
+            </li>
+            <li>
+                <a href="page-two.html">Page-two</a>
+            </li>
+            <li>
+                <a href="new-page.html">new page</a>
+            </li>
+            <li>
+                <a href="forms.html">Forms</a>
+            </li>
+        </ul>
+    </nav>
+    <h1>Formulär</h1>
+    
+    <form>
+        <fieldset>
+            <legend>Personlig infromation</legend>
+            <label for="name">Ange ditt namn:</label><br>
+            <input type="text" name="name" id="name" placeholder="Ange ditt namn här...">   <br><br>
+           
+            <label for="email">Ange din email:</label><br>
+            <input type="email"name="email" id="email" required>
+            
+            <label for="customerStatus">Kund status</label>
+            <select name="customerStatus" id="customerStatus" required>
+                <option value="" disabled selected>Ange status</option>
+                <option value="kund">Tidigare Kund</option>
+                <option value="ny kund">Ny Kund</option>
+            </select>
+        
+        </fieldset>
+
+        <input type="checkbox" name="Volvo" id="volvo" value="volvo">
+        <label for="Volvo">Jag kör en Volvo</label><br>
+
+        <input type="checkbox" name="Saab" id="Saab" value="saab">
+        <label for="Saab">Jag kör en Saab</label><br>
+        
+        <input type="checkbox" name="Audi" id="Audi" value="audi">
+        <label for="Audi">Jag kör en Audi 🚗</label><br>
+
+        <br><br>
+
+        <input type="radio" name="car" id="bmw" value="bmw">
+        <label for="bmw">Jag kör bmw</label>
+        <br>
+        <input type="radio" name="car" id="kia" value="kia">
+        <label for="kia">Jag kör bmw</label>
+        <br>
+        <input type="radio" name="car" id="opel" value="opel">
+        <label for="opel">Jag kör opel</label>
+        <br>
+
+
+        <label for="message">Ditt medelande:</label><br>
+        <textarea id ="message"name="message" cols="30" rows="10"></textarea>
+        <br>
+        <input type="submit" value="Sckika">
+    </form>
+</body>
+</html>
